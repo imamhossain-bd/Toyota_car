@@ -1,0 +1,18 @@
+
+
+#slide1:target ~ .slides .slide1,
+#slide2:target ~ .slides .slide2,
+#slide3:target ~ .slides .slide3,
+#slide4:target ~ .slides .slide4,
+#slide5:target ~ .slides .slide5,
+#slide6:target ~ .slides .slide6 {
+    display: flex;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}

@@ -1,46 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/e8a913c370.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="h-28">
+    <section class="h-24">
         <div class="px-10 pt-0">
-            <div class="navbar bg-base-100 px-10 flex items-center">
+            <div class="navbar bg-base-100 h-24 px-10 flex items-center">
                 <div class="navbar-start">
-                    <div class="w-52 cursor-pointer">
-                        <img src="image/logo.svg" alt="">
+                    <div class="cursor-pointer">
+                        <img class="w-56" src="image/logo.svg" alt="">
                     </div>
                 </div>
                 <div class="navbar-end gap-8 cursor-pointer ">
-                    <ul class="gap-10 menu-horizontal px-1">
-                        <li class=""><a href="#">Vehicles</a></li>
-                        <li class=""><a href="#">Shopping Tools</a></li>
-                        <li class=""><a href="#">Owner</a></li>
-                        <li class=""><a href="#">Search Inventory</a></li>
+                    <ul class=" gap-x-5 menu-horizontal font-bold px-1">
+                        <li class="border-2 border-black border-transparent px-6 py-2 rounded-full hover:border-black"><a href="#">Vehicles</a></li>
+                        <li class="border-2 border-black border-transparent px-6 py-2 rounded-full hover:border-black"><a href="#">Shopping Tools</a></li>
+                        <li class="border-2 border-black border-transparent px-6 py-2 rounded-full hover:border-black"><a href="#">Owner</a></li>
+                        <li class="border-2 border-black border-transparent px-6 py-2 rounded-full hover:border-black"><a href="#">Search Inventory</a></li>
                     </ul>
                     <ul>
-                        <li class=""><i class="fa-regular fa-circle-user"></i></i></li>
+                        <li class="text-4xl"><i class="fa-regular fa-circle-user"></i></i></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!-- Banner Section Start -->
+        <section>
+            
+
+    <div id="default-carousel" class="relative w-full mt-[-10px]" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative overflow-x-hidden overflow-y-hidden w-[100%] h-[670px] rounded-lg ">
+            <!-- Item 1 -->
+            
+            <div class="hidden duration-700 ease-in-out w-[100%] h-[670px]" data-carousel-item>
+                <video class="w-[100%] absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted>
+                    <source src="/LND_MY25_SUS_HPMarqueeCutdown_TCOM_HeroDesktopTab1920x796fs5mb_TYTW2861000H.mp4" type="video/mp4">
+                </video>
+                <div class="slide-content">
+                    <p>2025 Land Cruiser <br>
+                        Epic adventures. Timeless heritage</p>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out w-[100%] h-[670px]" data-carousel-item>
+                
+                <img src="image/Picture-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out w-[100%] h-[670px]" data-carousel-item>
+                <img src="image/Picture-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out w-[100%] h-[670px]" data-carousel-item>
+                <img src="image/Picture-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out w-[100%] h-[670px]" data-carousel-item>
+                <img src="image/Picture-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+        </section>
     <!-- Banner Section End -->
 
+    <!-- Explore All Vehicles -->
+     <section class="mb-10">
+        <div class="flex justify-center mt-24 text-4xl font-bold">
+            <h2>Explore All Vehicles</h2>
+        </div>
+        <div>
+            <ul class="menu-horizontal border-b-2 w-[44rem] items-center text-base font-bold ml-[26rem] gap-6 mt-7 cursor-pointer">
+                <li class="border-b-2 ml-14 border-black border-transparent hover:border-black">Cars & Minivan</li>
+                <li class="border-b-2 border-black border-transparent hover:border-black">Trucks</li>
+                <li class="border-b-2 border-transparent ">Crossovers & SUVs</li>
+                <li class="border-b-2 border-black border-transparent hover:border-black">Electrified</li>
+                <li class="border-b-2 border-black border-transparent hover:border-black">Upcoming Vehicles</li>
+            </ul>
+        </div>
+     </section>
+    <!-- Explore All Vehicles -->
+    <section>
+        <div class="mb-7 mt-10">
+            <!-- Carousel Container -->
+            <div class="mt-12 mx-10 flex overflow-hidden gap-7">
+                <div id="slide1" class="slides">
+                    <!-- Slide 1 -->
+                    <div class="card card-side bg-gray-400 shadow-xl slide slide1 duration-700 ease-in-out">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-5.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#6d5748] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white ">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 1 -->
+                </div>
+    
+                <div id="slide2" class="slides">
+                    <!-- Slide 2 -->
+                    <div class="card card-side bg-gray-400  shadow-xl slide slide2">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-6_1.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#618ab1] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white ">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 2 -->
+                </div>
+    
+                <div id="slide3" class="slides">
+                    <!-- Slide 3 -->
+                    <div class="card card-side bg-gray-400  shadow-xl slide slide3">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-7.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#458059] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 3 -->
+                </div>
+    
+                <div id="slide4" class="slides">
+                    <!-- Slide 4 -->
+                    <div class="card card-side bg-gray-400 shadow-xl slide slide4">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-8.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#607c96] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white ">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 4 -->
+                </div>
+    
+                <div id="slide5" class="slides">
+                    <!-- Slide 5 -->
+                    <div class="card card-side bg-gray-400  shadow-xl slide slide5">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-9.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#537697] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white ">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 5 -->
+                </div>
+    
+                <div id="slide6" class="slides">
+                    <!-- Slide 6 -->
+                    <div class="card card-side bg-gray-400 shadow-xl slide slide6">
+                        <figure>
+                            <img class="w-[350px] h-[360px]" src="image/Picture-10.jpg" alt="Movie" />
+                        </figure>
+                        <div class="card-body bg-[#686868] rounded-r-xl">
+                            <h2 class="text-xl font-bold text-white">2024</h2>
+                            <p class="text-2xl text-white">Toyota Crown <br> Signia</p>
+                            <p class="text-white font-medium">Experience the height of sophistication.</p>
+                            <div class="flex items-center gap-x-7 mb-5">
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">$43,590</h2>
+                                    <p class="text-xs text-white ">Starting MSRP *</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-white font-semibold text-xl">39/37</h2>
+                                    <p class="text-white text-xs ">Up to Est. MPG *</p>
+                                </div>
+                            </div>
+                            <div class="card-actions justify-start flex items-center gap-10">
+                                <button class="btn bg-white text-black font-medium text-lg rounded-full">Explore</button>
+                                <button class="bg-transparent text-white font-medium text-lg border-0">Build <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other cards in Slide 6 -->
+                </div>
+            </div>
+    
+            <!-- Pagination Section -->
+            <div class="pagination">
+                <a href="#slide1" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">1</a>
+                <a href="#slide2" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">2</a>
+                <a href="#slide3" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">3</a>
+                <a href="#slide4" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">4</a>
+                <a href="#slide5" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">5</a>
+                <a href="#slide6" class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">6</a>
+                
+            </div>
+    
+            <!-- Anchor links for slides -->
+            <div id="slide1" class="hidden"></div>
+            <div id="slide2" class="hidden"></div>
+            <div id="slide3" class="hidden"></div>
+            <div id="slide4" class="hidden"></div>
+            <div id="slide5" class="hidden"></div>
+            <div id="slide6" class="hidden"></div>
+        </div>
+    </section>
+
+    
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
 </body>
 
 </html>
